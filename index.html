@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+    <title>Fantasy Premier League</title>
+</head>
+<body>
+    <h1>Fantasy Premier League Registration</h1>
+
+    <form action="#" method="post">
+        <!-- name -->
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+        </div>
+        
+        <!-- email -->
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+
+         <!-- team name -->
+      <div class="form-group">
+        <label for="teamName">Team Name</label>
+        <input type="text" id="teamName" name="teamName" placeholder="Enter your fantasy team name" required>
+      </div>
+      
+      <!-- preferred league -->
+      <div class="form-group">
+        <label for="league">Preferred League</label>
+        <select id="league" name="league" required>
+          <option value="">Select your preferred league</option>
+          <option value="Classic League">Classic League</option>
+          <option value="Head-to-Head League">Head-to-Head League</option>
+          <option value="Friends League">Friends League</option>
+        </select>
+      </div>
+      
+    <!-- join date -->
+      <div class="form-group">
+        <label for="joinDate">Date of Joining</label>
+        <input type="date" id="joinDate" name="joinDate" required>
+      </div>
+
+      <!-- number of people on team -->
+      <div class="form-group">
+        <label>How many people are on your team?</label>
+        <div class="radio-group">
+          <label><input type="radio" name="teamSize" value="8" required> 8 Players</label>
+          <label><input type="radio" name="teamSize" value="10"> 10 Players</label>
+          <label><input type="radio" name="teamSize" value="12"> 12 Players</label>
+          <label><input type="radio" name="teamSize" value="15"> 15 Players</label>
+        </div>
+
+      <!-- submit -->
+      <button type="submit">Register</button>
+    </form>
+  </div>
+
+      <script src="js/index.js"></script>
+</body>
+</html>
